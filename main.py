@@ -73,13 +73,8 @@ def main():
         driver.get(f'https://toon.at/donator/mypage/donation-history')
         driver.implicitly_wait(30)
         endCount = 0
-        print("도네이션 기록을 기다리는중", end='')
+        print("도네이션 기록을 기다리는중")
         while driver.current_url != "https://toon.at/donator/mypage/donation-history":
-            print(".", end='')
-            endCount += 1
-            if endCount > 10:
-                print("")
-                print("아직도 도네이션 기록을 기다리는중", end='')
             time.sleep(1)
             driver.implicitly_wait(30)
 
