@@ -131,3 +131,4 @@ dmypy.json
 chromedriver.exe
 donationList.pickle
 login.pickle
+donateList.htm
